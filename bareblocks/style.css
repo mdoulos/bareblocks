@@ -1,0 +1,23 @@
+/*
+Theme Name: Bareblocks
+Theme URI: https://github.com/mdoulos
+Author: MDoulos
+Author URI: https://github.com/mdoulos
+Description: This theme was designed to be the foundation for a custom WordPress theme. It is a barebones theme that includes only the most essential files and code with the exception that a couple of useful features are built-in that help organization.
+Tags: barebones
+Version: 2023
+Requires at least: 5.2
+License: GNU General Public License v3 or Later
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: bareblocks
+
+Bareblocks WordPress Theme © 2023 MDoulos
+Bareblocks is distributed under the terms of the GNU GPL
+*/
+
+/*
+Required Stylesheet
+
+This file is intentionally left blank and it is not loaded on the front-end. This file is required by Wordpress but the required presence in the parent directory doesn't assist in clean organization.
+To add custom styles, either enqueue a custom stylesheet from css/ or write in primary-style.css 
+*/

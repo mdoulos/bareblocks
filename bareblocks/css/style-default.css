@@ -1,0 +1,359 @@
+/* 
+Default Styles
+
+This file defines styles that form the foundation of any theme.
+They override commeon styles by the different browsers
+Theme-specific styles should be placed in style-primary.css or another file.
+*/
+
+:root {
+    --content-width: 1400px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+a {
+	text-decoration-skip-ink: auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+	outline: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+q {
+	display: inline;
+	font-style: italic;
+}
+
+q:before {
+	content: '"';
+	font-style: normal;
+}
+
+q:after {
+	content: '"';
+	font-style: normal;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="search"],
+input[type="password"] {
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 0;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th,
+td {
+	padding: 2px;
+}
+
+big {
+	font-size: 120%;
+}
+
+small,
+sup,
+sub {
+	font-size: 80%;
+}
+
+sup {
+	vertical-align: super;
+}
+
+sub {
+	vertical-align: sub;
+}
+
+dd {
+	margin-left: 20px;
+}
+
+kbd,
+tt {
+	font-family: courier;
+	font-size: 12px;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del,
+strike,
+s {
+	text-decoration: line-through;
+}
+
+dt {
+	font-weight: bold;
+}
+
+address,
+cite,
+var {
+	font-style: italic;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.sticky {}
+
+.bypostauthor {}
+
+.wp-caption {}
+
+.wp-caption-text {}
+
+.gallery-caption {}
+
+.alignright {}
+
+.alignleft {}
+
+.aligncenter {}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
+}
+
+.screen-reader-text:focus {
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+	clip: auto !important;
+	-webkit-clip-path: none;
+	clip-path: none;
+	color: #007acc;
+	display: block;
+	font-size: 14px;
+	font-size: .875rem;
+	font-weight: 700;
+	height: auto;
+	right: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+.skip-link {
+	left: -9999rem;
+	top: 2.5rem;
+	z-index: 999999999;
+	text-decoration: underline;
+}
+
+.skip-link:focus {
+	display: block;
+	left: 6px;
+	top: 7px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	z-index: 100000;
+	right: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+.form-allowed-tags:not(:focus):not(:active) {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden, .screen-only {
+    display: none;
+}
+
+.site-width-centered {
+	max-width: var(--content-width);
+	margin: 0 auto;
+}
+
+.mobile-nav, .hamburger-btn, #checkboxham {
+	display: none;
+}
+
+.hamburger-wrapper {
+    position: relative;
+    top: 4px;
+}
+
+.hamburger-menu {
+    margin: 0 auto;
+    width: 30px;
+    height: 24px;
+    position: relative;
+}
+
+.hamburger-menu .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 10.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: -2px;
+}
+
+.hamburgerham .bar1 {
+    transform-origin: 5%;
+}
+
+.hamburgerham .bar4 {
+    transform-origin: 5%;
+}
+
+.checkboxham:checked + label > .hamburger-menu > .bar1 {
+    transform: rotate(45deg);
+    height: 3px;
+    width: 30px;
+	background-color: transparent;
+}
+
+.checkboxham:checked + label > .hamburger-menu > .bar2 {
+    transform: rotate(-45deg);
+    height: 3px;
+}
+
+.checkboxham:checked + label > .hamburger-menu > .bar3 {
+    transform: rotate(45deg);
+    height: 3px;
+}
+
+.checkboxham:checked + label > .hamburger-menu > .bar4 {
+    transform: rotate(-45deg);
+    height: 3px;
+    width: 30px;
+	background-color: transparent;
+}
+
+/* ---------------------------------------------------------- Header (768) ---*/
+
+@media only screen and (max-width: 768px) {
+
+	.desktop-nav {
+		display: none;
+	}
+
+	.mobile-nav, .hamburger-btn  {
+		display: block;
+	}
+    
+}
